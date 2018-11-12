@@ -1,0 +1,15 @@
+{
+  "name": "nodelab2",
+  "version": "1.0.0",
+  "description": "Node Lab 2 -- Shopping List",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Ariana",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
