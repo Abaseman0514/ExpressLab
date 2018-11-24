@@ -1,8 +1,8 @@
 "use strict";
 
-const cart = {
+const item = {
  templateUrl: "home/cart.html",
  controller: "CartController"
 };
 
-angular.module("app").component("cart", cart);
+angular.module("app").component("item", item);

@@ -1,7 +1,7 @@
 "use strict";
 
-const express = require('express');
-const carts = require('./routes');
+const express = require("express");
+const items = require("./routes");
 const app = express();
 const port = 8888;
 // const http = require("http");
@@ -13,7 +13,7 @@ const port = 8888;
 
 app.use(express.static("./public"));
 app.use(express.json());
-app.use("/", carts);
+app.use("/", items);
 
 
 app.listen(port, () => console.log(`server up and running on localhost: ${port}`));

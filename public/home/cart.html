@@ -5,12 +5,12 @@
 <button class = "Submit">Add New Item to Cart</button>
 </form>
 
-<section ng-repeat"item in $ctrl.items">
- <input class="edit_input" type="text" ng-blur="$ctrl.updateData(item);"
+<section ng-repeat="item in $ctrl.items">
+ <input class="edit__input" type="text" ng-blur="$ctrl.updateData(item);"
  ng-model="item.product">
- <input class="edit_input" type="text" ng-blur="$ctrl.updateData(item);"
+ <input class="edit__input" type="text" ng-blur="$ctrl.updateData(item);"
  ng-model="item.price">
- <input class="edit_input" type="text" ng-blur="$ctrl.updateData(item);"
+ <input class="edit__input" type="text" ng-blur="$ctrl.updateData(item);"
  ng-model="item.quantity">
  <button ng-click="$ctrl.deleteData(item.id);">X</button>
 </section>
