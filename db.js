@@ -5,10 +5,10 @@ const pg = require("pg");
 const pool = {
  user: "postgres",
  password: "****",
- host:"localhost",
+ host: "localhost",
  port: 5432,
- database: "postgres", 
+ database: "postgres",
  ssl: false
 };
 
-module.exports = new pg.Pool (pool);
+module.exports = new pg.Pool(pool);

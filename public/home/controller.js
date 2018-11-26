@@ -1,25 +1,26 @@
 "use strict";
 
 angular
-.module("app")
+   .module("app")
 
-.controller("CartController", function (CartService) {
- const $ctrl = this;
- function edits(response) {
-  $ctrl.items = response.data;
- }
+   .controller("CartController", function (CartService) {
+      const $ctrl = this;
 
- $ctrl.updateData = (item) => {
-  CartService.updateData(item).then(edits);
- };
+      function edits(response) {
+         $ctrl.items = response.data;
+      }
 
- CartService.getData().then(edits);
+      $ctrl.updateData = (item) => {
+         CartService.updateData(item).then(edits);
+      };
 
- $ctrl.removeItem = (id) => {
-  CartService.removeItem(id).then(edits);
- };
+      CartService.getData().then(edits);
 
- $ctrl.postData = (addItem) => {
-  CartService.postData(addItem).then(edits);
-  };
- });
+      $ctrl.removeItem = (id) => {
+         CartService.removeItem(id).then(edits);
+      };
+
+      $ctrl.postData = (addItem) => {
+         CartService.postData(addItem).then(edits);
+      };
+   });
