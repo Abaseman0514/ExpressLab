@@ -2,7 +2,7 @@
   "name": "expresslab2",
   "version": "1.0.0",
   "description": "Express Lab Shopping Cart",
-  "main": "cart-items.js",
+  "main": "index.js",
   "dependencies": {
     "express": "^4.16.4",
     "pg": "^7.6.1"

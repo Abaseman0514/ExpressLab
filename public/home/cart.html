@@ -1,8 +1,9 @@
 <form ng-submit="$ctrl.postData($ctrl.addItem);">
+
 <input type="text" placeholder="Product" ng-model="$ctrl.addItem.product">
 <input type="text" placeholder="Price" ng-model="$ctrl.addItem.price">
 <input type="text" placeholder="Quantity" ng-model="$ctrl.addItem.quantity">
-<button class = "Submit">Add New Item to Cart</button>
+<button>Add New Item to Cart</button>
 </form>
 
 <section ng-repeat="item in $ctrl.items">

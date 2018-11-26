@@ -2,7 +2,8 @@
 
 angular
 .module("app")
-.controller("CartContoller", function (CartService) {
+
+.controller("CartController", function (CartService) {
  const $ctrl = this;
  function edits(response) {
   $ctrl.items = response.data;
