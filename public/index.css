@@ -1,3 +1,15 @@
 body {
- color: black;
+ background: black;
+text-align: center;
+}
+
+h1 {
+ color: lavender;
+}
+
+.add, .edit__input, button {
+ background: rgb(152, 152, 209);
+ color: rgb(54, 7, 78);
+ margin-top: 10px;
+ height: 25px;
 }

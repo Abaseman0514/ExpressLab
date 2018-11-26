@@ -21,7 +21,7 @@ angular
   });
  };
 
- service.deleteData = (id) => {
+ service.removeItem = (id) => {
   return $http ({
    method:"DELETE",
    url:`/items/${id}`

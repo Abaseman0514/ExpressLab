@@ -15,8 +15,8 @@ angular
 
  CartService.getData().then(edits);
 
- $ctrl.deleteData = (id) => {
-  CartService.deleteData(id).then(edits);
+ $ctrl.removeItem = (id) => {
+  CartService.removeItem(id).then(edits);
  };
 
  $ctrl.postData = (addItem) => {
